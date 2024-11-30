@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         StandardEyeIcon: "fa-regular fa-circle",
         StandardColor: "white",
         SuccessEyeIcon: "fa-solid fa-circle",
-        SuccessColor: "#00ffff",
+        SuccessColor: "#DC143C",
     };
 
     const targetEye = document.getElementById("target-eye");
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
             targetOption.style.marginBottom = "0.2vh";
             targetOption.style.borderRadius = "0.15rem";
             targetOption.style.padding = "0.45rem";
-            targetOption.style.background = "rgba(0, 255, 206, 0%)";
+            targetOption.style.background = "rgba(220, 20, 60, 0%)";
             targetOption.style.color = config.StandardColor;
             const targetIcon = document.createElement("span");
             targetIcon.id = `target-icon-${index}`;
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         targetEye.className = config.SuccessEyeIcon;
         TargetEyeStyleObject.color = config.SuccessColor;
-        TargetEyeStyleObject.textShadow = "0 0 15px cyan";
+        TargetEyeStyleObject.textShadow = "0 0 15px #DC143C";
         targetLabel.textContent = "";
         for (let [index, itemData] of Object.entries(item.options)) {
             createTargetOption(index, itemData);
